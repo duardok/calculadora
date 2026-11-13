@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Site de Calculadoras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Site de Calculadoras</h1>
+
+    <div class="calculadora">
+        <h2>Calculadora de IMC</h2>
+
+        <input type="number" id="peso" placeholder="Peso (kg)">
+        <input type="number" id="altura" placeholder="Altura (m)" step="0.01">
+
+        <button onclick="calcularIMC()">Calcular IMC</button>
+
+        <p id="resultadoIMC"></p>
+    </div>
+
+    <div class="calculadora">
+        <h2>Taxa Metabólica Basal</h2>
+
+        <input type="number" id="idade" placeholder="Idade">
+        <input type="number" id="pesoTMB" placeholder="Peso (kg)">
+        <input type="number" id="alturaTMB" placeholder="Altura (cm)">
+
+        <select id="sexo">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+        </select>
+
+        <button onclick="calcularTMB()">Calcular TMB</button>
+
+        <p id="resultadoTMB"></p>
+    </div>
+
+    <div class="calculadora">
+        <h2>Calculadora de Salário Líquido</h2>
+
+        <input type="number" id="salario" placeholder="Salário bruto (R$)">
+        <input type="number" id="desconto" placeholder="Descontos (R$)">
+
+        <button onclick="calcularSalario()">Calcular Salário</button>
+
+        <p id="resultadoSalario"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
